@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  .boxed {
+    Width: 200px;
+    padding: 15px;
+    color: #3382C9;
+    font-family: calisto mt;
+    font-size: 150%;
+    position: relative;
+    left: 130px;
+    text-align: center;
+  }
+  div.boxed {
+    background-color: #BAEBF5;
+  }
+
+  div.patient_name {
+    font-family: arial;
+    background-color: white;
+    border: 2px solid #3382C9;
+    width: 110px;
+  }
+      
+    div.patient_bmi {
+    font-family: arial;
+    position: relative;
+    left: 130px;
+  }
+  
+  div.patient_glucose {
+    font-family: arial;
+    position: relative;
+    left: 130px;
+  }
+      
+  div.patient_systolic {
+    font-family: arial;
+    position: relative;
+    left: 130px;
+  }
+  
+  div.patient_diastolic {
+    font-family: arial;
+    position: relative;
+    left: 130px;
+  }
+  
+  div.patient_cholesterol {
+    font-family: arial;
+    position: relative;
+    left: 130px;
+  }
+  
+  div.patient_smoking {
+    font-family: arial;
+    position: relative;
+    left: 130px;
+  }
+      
+  div.patient_overall {
+    font-family: arial;
+    background-color: white;
+    border: 2px solid red;
+    width: 250px;
+    position: relative;
+    left: 130px;
+    
+  }
+  div.error {
+    color: red;
+  }
+  .overall {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+  }
+  form {
+    color: #3FBEF3;
+    font-family: arial;
+  }
+  
+  .button {
+    background-color: white;
+    border: 1px solid black;
+      }
+      
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  <script src="app4.js"></script>
+</head>
+<body>
+    <img align="right" src="Ruksi.gif" alt="HTML5 Ruksi" style="width:50px;height:50px;">
+    <img align="right" src="Kysymysmerkki.gif" alt="HTML5 Kysymysmerkki" style="width:50px;height:50px;">
+    
+    <div class="boxed">
+        Patient card 
+    </div>
+    <br>
+    <form name="inputForm">
+        Give the patient ID:<br><input type="text" id="formPatientId" name="patientId"/>
+        <input id="submitId" type="button" class="button" value="Search" />
+    </form>
+    <br>
+
+    <div class="error" id="errorText"></div>
+    <div class="patient_name" id="patientname"></div>
+    <br>
+    <div class="patient_bmi" id="bmi"></div>
+    <br>
+    <div class="patient_glucose" id="glucose"></div>
+    
+    <img align="right" src="Logo.gif" alt="HTML5 Logo" style="width:250px;height:128px;">
+    
+    <br>
+    <div class="patient_systolic" id="systolic"></div>
+    <br>
+    <div class="patient_diastolic" id="diastolic"></div>
+    <br>
+    <div class="patient_cholesterol" id="cholesterol"></div>
+    <br>
+    <div class="patient_smoking" id="smoking"></div>
+    <br>
+    <div class="patient_overall" id="overall"></div>
+    <br>    
+    
+
+</body>
+</html>
